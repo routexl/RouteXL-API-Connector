@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 require_once('routexl-api.class.php');
 
 // Set the locations
@@ -29,16 +31,20 @@ $locations[] = array(
 	'lng' => 5.432482
 );
 
+
 // Init API connector class
-$r = new RouteXL\API_connector();
+$r = new RouteXL\API_Connector();
+
 
 // Get tour
 if ($r->tour($locations)) {
 	
 	// Show result
 	print_r($r->result);
+	
 } else {
 	
 	// Error message
-	echo $r->error;
+	echo 'ERROR: ' . $r->error;
+	
 }
