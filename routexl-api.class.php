@@ -73,7 +73,11 @@ class API_Connector {
 			curl_close($ch); // Close the connection
 			
 			// Decode the output
-			$this->result = json_decode($output);
+			if(json_decode($output)) {
+				$this->result = json_decode($output);
+			}else{
+				$this->result = $output;
+			}
 			
 		} catch(exception $e) {
 			
