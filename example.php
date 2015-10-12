@@ -31,10 +31,18 @@ $locations[] = array(
 	'lng' => 5.432482
 );
 
+$locations[] = array(
+	'name' => '5',
+	'lat' => 52.3702,
+	'lng' => 4.8951,
+	'restrictions' => array(
+		'ready' => 15,
+		'due' => 60
+	)
+);
 
 // Init API connector class
 $r = new RouteXL\API_Connector();
-
 
 // Get tour
 if ($r->tour($locations)) {
