@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>RouteXL</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="./routexl-api.js"></script>
+	</head>
+	<body>
+		<script>
+		
+			// Set the locations
+			locations = [];
+			
+			locations[locations.length] = {
+				'name' : '1',
+				'lat' : 52.05429,
+				'lng' : 4.248618
+			};
+			
+			locations[locations.length] = {
+				'name' : '2',
+				'lat' : 52.076892,
+				'lng' : 4.26975,
+			};
+			
+			locations[locations.length] = {
+				'name' : '3',
+				'lat' : 51.669946,
+				'lng' : 5.61852
+			};
+			
+			locations[locations.length] = {
+				'name' : '4',
+				'lat' : 51.589548,
+				'lng' : 5.432482
+			};
+			
+			locations[locations.length] = {
+				'name' : '5',
+				'lat' : 52.3702,
+				'lng' : 4.8951,
+				'restrictions' : {
+					'ready' : 10,
+					'due' : 120
+				}
+			};
+			
+			// Init API connector
+			var r = new RouteXL_API_Connector();
+			
+			// Get the tour
+			r.tour( locations , function(result) {
+				
+				// Success
+				document.write( result );
+				
+			}, function(error) {
+				
+				// Error
+				document.write( error );
+				
+			});
+			
+		</script>
+	</body>
+</html>
