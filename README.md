@@ -1,6 +1,6 @@
 # RouteXL-API-Connector
 
-Examples in PHP and Javascript to connect to the RouteXL routing optimization API.
+Code examples to connect to the RouteXL routing optimization API.
 
 # Multi stop routing
 
