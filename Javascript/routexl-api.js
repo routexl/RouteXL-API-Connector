@@ -35,7 +35,7 @@ function RouteXL_API_Connector() {
 			    xhr.setRequestHeader ("Authorization", "Basic " + btoa("username:password"));
 			},
 
-			url: "https://api.routexl.nl/tour",
+			url: "https://api.routexl.com/tour",
 			method: "POST",
 			dataType: "json",
 
