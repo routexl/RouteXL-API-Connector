@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2015, RouteXL
+ * Copyright (c) 2015-2020, RouteXL
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without modification, 
@@ -54,7 +54,7 @@ class API_Connector {
 			
 			// Use libcurl to connect and communicate
 			$ch = curl_init(); // Initialize a cURL session
-			curl_setopt($ch, CURLOPT_URL, 'https://api.routexl.nl/tour'); // Set the URL
+			curl_setopt($ch, CURLOPT_URL, 'https://api.routexl.com/tour'); // Set the URL
 			curl_setopt($ch, CURLOPT_HEADER, 0); // No header in the output
 			curl_setopt($ch, CURLOPT_POST, 1); // Do a regular HTTP POST
 			curl_setopt($ch, CURLOPT_POSTFIELDS, 'locations=' . json_encode($locations)); // Add the locations
