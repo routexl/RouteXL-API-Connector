@@ -34,7 +34,7 @@ function RouteXL_API_Connector() {
 		if (!httpRequest) {
 			alert('Cannot create an XMLHttpRequest instance');
 			return false;
-    }
+		}
 		
 		// Set up the request and send it
 		httpRequest.open('POST', "https://api.routexl.com/tour");
