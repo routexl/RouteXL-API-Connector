@@ -24,4 +24,4 @@ The RouteXL API provides programmatic access to optimize multi stop itineraries.
 get distance tables and the optimized order of stops. In the optimization time windows are 
 supported. Responses are in JSON.
 
-Read more about the API: https://www.routexl.nl/api/
+Read more about the API: https://www.routexl.com/api/
