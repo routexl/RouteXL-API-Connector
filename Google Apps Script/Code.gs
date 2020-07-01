@@ -46,7 +46,7 @@ function api_connector(locations) {
   };
   
   // Make the request
-  var response = UrlFetchApp.fetch("https://api.routexl.nl/tour", options);
+  var response = UrlFetchApp.fetch("https://api.routexl.com/tour", options);
   if (!response) return false;
   
   // Get the answer
